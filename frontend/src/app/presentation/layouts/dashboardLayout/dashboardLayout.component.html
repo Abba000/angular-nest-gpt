@@ -1,0 +1,37 @@
+<main class="main-content-chat">
+    <nav
+      class="navbar-chat"
+    >
+      <h1
+        class="font-bold text-lg lg:text-3xl bg-gradient-to-br from-white via-white/50 bg-clip-text text-transparent" style="text-align: center;"
+      >
+        AA GPT
+      </h1>
+  
+      <div class="border-gray-700 border my-3"></div>
+  
+      <div class="flex flex-col">
+        @for (route of routes; track route.path) {
+          <app-sidebar-menu-item
+            style="margin-bottom: 10px;"
+            [description]="route.data!['description']"
+            [icon]="route.data!['icon']"
+            [path]="route.path!"
+            [title]="route.data!['title']"
+          />
+        }
+      
+      </div>
+      <!-- End Nav Links -->
+    </nav>
+  
+    <section
+      class="content-chat"
+    >
+      <div class="">
+        <div class="">
+          <router-outlet />
+        </div>
+      </div>
+    </section>
+  </main>

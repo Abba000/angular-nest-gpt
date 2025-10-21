@@ -1,0 +1,21 @@
+.main-content-chat {
+    display: flex;
+    width: 100%;
+    padding: 15px;
+    gap: 15px;
+    height: 100vh
+}
+
+.navbar-chat {
+    width: 20%;
+    background-color: #222;
+    border-radius: 20px;
+    padding: 15px 15px 0px 15px;
+}
+
+.content-chat {
+    background-color: #222;
+    padding: 15px;
+    border-radius: 20px;
+    width: 80%
+}
